@@ -1,0 +1,14 @@
+.Raymond {
+  /* display: flex;
+  justify-content: center; */
+  text-align: center;
+}
+
+.raypic {
+  width: 50vh;
+  border-radius: 50%;
+}
+
+.homesum {
+  font-family: "Rokkitt", serif;
+}

@@ -1,0 +1,14 @@
+.card-deck{
+    width: 90vw;
+}
+
+
+.decker{
+  display: flex;
+  justify-content: center;
+}
+
+.carder{
+  height: 15rem;
+}
+
