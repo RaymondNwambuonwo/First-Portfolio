@@ -1,10 +1,6 @@
 body {
   padding: 0;
-  background-image: radial-gradient(
-    circle 848px at 10% 20%,
-    rgba(174, 231, 165, 0.9) 0%,
-    rgba(181, 205, 154, 1) 90%
-  );
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
 .containerr {
   width: 100vw;
