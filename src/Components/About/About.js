@@ -3,7 +3,16 @@ import "./About.css";
 
 class About extends Component {
   render() {
-    return <div></div>;
+    return (
+      <div>
+        <h1>Who is Raymond Nwambuonwo</h1>
+        <div></div>
+
+        <div></div>
+
+        <div></div>
+      </div>
+    );
   }
 }
 

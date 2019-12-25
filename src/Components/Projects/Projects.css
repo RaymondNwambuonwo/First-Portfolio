@@ -1,14 +1,16 @@
-.card-deck{
-    width: 90vw;
+.card-deck {
+  width: 90vw;
 }
 
-
-.decker{
+.decker {
   display: flex;
   justify-content: center;
 }
 
-.carder{
+.carder {
   height: 15rem;
 }
 
+.cards {
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}

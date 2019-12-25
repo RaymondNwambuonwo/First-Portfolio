@@ -2,6 +2,7 @@ body {
   padding: 0;
   background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
+
 .containerr {
   width: 100vw;
   min-height: 100vh;
