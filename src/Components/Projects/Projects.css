@@ -18,3 +18,8 @@
 .modtex {
   font-family: "Bangers", cursive;
 }
+
+.paratex {
+  font-size: large;
+  color: slategray;
+}

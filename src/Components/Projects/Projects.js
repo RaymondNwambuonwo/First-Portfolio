@@ -43,7 +43,14 @@ class Projects extends Component {
           <Card className="text-center cards" border="primary">
             <Card.Img className="carder" variant="top" src={OTOI} />
             <Card.Body>
-              <Card.Title className="modtex">OTOI</Card.Title>
+              <Button
+                variant="link"
+                href="https://mern-group-app-frontend.mustafawhassan.now.sh/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Card.Title className="modtex">OTOI</Card.Title>
+              </Button>
               <Card.Text>
                 <Button
                   className="primary modtex"
@@ -59,14 +66,14 @@ class Projects extends Component {
                   onCancel={() => this.setModal1Visible(false)}
                 >
                   <div className="text-center modtex">
-                    <h1>Description</h1>
-                    <p>
+                    <h3>Description</h3>
+                    <p className="paratex">
                       OTOI is an application that allows you to keep track of
                       information in a central place. You are able to track your
                       skills, agendas, and applications respectively.
                     </p>
-                    <h1>Technologies</h1>
-                    <p>Express, MongoDB, Node.js, React.</p>
+                    <h4>Technologies</h4>
+                    <p className="paratex">Express, MongoDB, Node.js, React.</p>
                   </div>
                 </Modal>
               </Card.Text>
@@ -76,7 +83,14 @@ class Projects extends Component {
           <Card className="text-center cards" border="primary">
             <Card.Img className="carder" variant="top" src={Rolodex} />
             <Card.Body>
-              <Card.Title className="modtex">Rolodex</Card.Title>
+              <Button
+                variant="link"
+                href="https://github.com/RaymondNwambuonwo/PythonRolodex"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Card.Title className="modtex">Rolodex</Card.Title>
+              </Button>
               <Card.Text>
                 <Button
                   className="primary modtex"
@@ -92,14 +106,15 @@ class Projects extends Component {
                   onCancel={() => this.setModal2Visible(false)}
                 >
                   <div className="text-center modtex">
-                    <h4>Description</h4>
-                    <p>
-                      OTOI is an application that allows you to keep track of
-                      information and to have it all in a central place. You are
-                      able to track your skills, agendas, and applications.
+                    <h3>Description</h3>
+                    <p className="paratex">
+                      Rolodex serves as a command-line application that allows
+                      you to store newly made contacts by entering information
+                      such as their name, date of birth, phone number, and
+                      email.
                     </p>
-                    <h5>Technologies</h5>
-                    <p>Express, MongoDB, Node.js, React.</p>
+                    <h4>Technologies</h4>
+                    <p className="paratex">PeeWee, Pyscopg2, Python.</p>
                   </div>
                 </Modal>
               </Card.Text>
@@ -109,7 +124,14 @@ class Projects extends Component {
           <Card className="text-center cards" border="primary">
             <Card.Img className="carder" variant="top" src={MemoryMatch} />
             <Card.Body>
-              <Card.Title className="modtex">Memory Match</Card.Title>
+              <Button
+                variant="link"
+                href="https://memory-matching.netlify.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Card.Title className="modtex">Memory Match</Card.Title>
+              </Button>
               <Card.Text>
                 <Button
                   className="primary modtex"
@@ -125,15 +147,17 @@ class Projects extends Component {
                   onCancel={() => this.setModal3Visible(false)}
                 >
                   <div className="text-center modtex">
-                    <h4>Description</h4>
-                    <p>
-                      OTOI is an application that you will find useful in your
-                      endeavors allows you to keep track of your skills,
-                      agendas, and applications.
+                    <h3>Description</h3>
+                    <p className="paratex">
+                      Memory Match takes on a new meaning to matching similar
+                      cards as the player gets to match different computer
+                      languages and frameworks. Made with the developer in mind,
+                      have a bit of fun matching up some popular languages and
+                      frameworks!
                     </p>
 
-                    <h1>Technologies</h1>
-                    <p>Express, MongoDB, Node.js, React.</p>
+                    <h4>Technologies</h4>
+                    <p className="paratex">HTML, CSS, JavaScript.</p>
                   </div>
                 </Modal>
               </Card.Text>
@@ -143,7 +167,14 @@ class Projects extends Component {
           <Card className="text-center cards" border="primary">
             <Card.Img className="carder" variant="top" src={Pong} />
             <Card.Body>
-              <Card.Title className="modtex">Pong</Card.Title>
+              <Button
+                variant="link"
+                href="https://github.com/RaymondNwambuonwo/PythonPongGame"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Card.Title className="modtex">Pong</Card.Title>
+              </Button>
               <Card.Text>
                 <Button
                   className="primary modtex"
@@ -159,14 +190,15 @@ class Projects extends Component {
                   onCancel={() => this.setModal4Visible(false)}
                 >
                   <div className="text-center modtex">
-                    <h4>Description</h4>
-                    <p>
-                      OTOI is an application that allows you to keep track of
-                      information and to have it all in a central place. You are
-                      able to track your skills, agendas, and applications.
+                    <h3>Description</h3>
+                    <p className="paratex">
+                      There are a lot of things you can do with Python and
+                      building games is one of them. Python Pong is similar to
+                      the traditional pong game but was created as a command
+                      line application with a graphical user interface.
                     </p>
-                    <h5>Technologies</h5>
-                    <p>Express, MongoDB, Node.js, React.</p>
+                    <h4>Technologies</h4>
+                    <p className="paratex">Python, Turtle.</p>
                   </div>
                 </Modal>
               </Card.Text>
