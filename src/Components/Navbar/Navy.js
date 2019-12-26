@@ -28,6 +28,9 @@ class Navy extends Component {
               <Link to="/Resume" className="nav-link">
                 Resume
               </Link>
+              <Link to="/Contact" className="nav-link">
+                Contact
+              </Link>
             </Nav>
           </Navbar.Collapse>
         </Navbar>

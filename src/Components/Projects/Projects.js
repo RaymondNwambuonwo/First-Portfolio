@@ -40,7 +40,7 @@ class Projects extends Component {
     return (
       <div className="decker">
         <CardDeck>
-          <Card className="text-center cards" border="primary">
+          <Card className="text-center cards" border="light">
             <Card.Img className="carder" variant="top" src={OTOI} />
             <Card.Body>
               <Button
@@ -54,6 +54,7 @@ class Projects extends Component {
               <Card.Text>
                 <Button
                   className="primary modtex"
+                  variant="light"
                   onClick={() => this.setModal1Visible(true)}
                 >
                   More Info
@@ -80,7 +81,7 @@ class Projects extends Component {
             </Card.Body>
           </Card>
 
-          <Card className="text-center cards" border="primary">
+          <Card className="text-center cards" border="light">
             <Card.Img className="carder" variant="top" src={Rolodex} />
             <Card.Body>
               <Button
@@ -94,6 +95,7 @@ class Projects extends Component {
               <Card.Text>
                 <Button
                   className="primary modtex"
+                  variant="light"
                   onClick={() => this.setModal2Visible(true)}
                 >
                   More Info
@@ -121,7 +123,7 @@ class Projects extends Component {
             </Card.Body>
           </Card>
 
-          <Card className="text-center cards" border="primary">
+          <Card className="text-center cards" border="light">
             <Card.Img className="carder" variant="top" src={MemoryMatch} />
             <Card.Body>
               <Button
@@ -135,6 +137,7 @@ class Projects extends Component {
               <Card.Text>
                 <Button
                   className="primary modtex"
+                  variant="light"
                   onClick={() => this.setModal3Visible(true)}
                 >
                   More Info
@@ -164,7 +167,7 @@ class Projects extends Component {
             </Card.Body>
           </Card>
 
-          <Card className="text-center cards" border="primary">
+          <Card className="text-center cards" border="light">
             <Card.Img className="carder" variant="top" src={Pong} />
             <Card.Body>
               <Button
@@ -178,6 +181,7 @@ class Projects extends Component {
               <Card.Text>
                 <Button
                   className="primary modtex"
+                  variant="light"
                   onClick={() => this.setModal4Visible(true)}
                 >
                   More Info

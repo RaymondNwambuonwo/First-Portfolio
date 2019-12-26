@@ -5,6 +5,7 @@ import Home from "./Components/Home/Home";
 import Projects from "./Components/Projects/Projects";
 import Resume from "./Components/Resume/Resume";
 import About from "./Components/About/About";
+import Contact from "./Components/Contact/Contact";
 import "./App.css";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
@@ -25,6 +26,7 @@ function App() {
         <Route path="/About" component={About} />
         <Route path="/Resume" component={Resume} />
         <Route path="/Projects" exact component={Projects} />
+        <Route path="/Contact" component={Contact} />
         <footer className="footy">
           <div className="contain">
             <a
