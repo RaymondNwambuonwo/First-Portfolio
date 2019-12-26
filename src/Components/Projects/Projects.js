@@ -43,10 +43,10 @@ class Projects extends Component {
           <Card className="text-center cards" border="primary">
             <Card.Img className="carder" variant="top" src={OTOI} />
             <Card.Body>
-              <Card.Title>OTOI</Card.Title>
+              <Card.Title className="modtex">OTOI</Card.Title>
               <Card.Text>
                 <Button
-                  className="primary"
+                  className="primary modtex"
                   onClick={() => this.setModal1Visible(true)}
                 >
                   More Info
@@ -62,8 +62,8 @@ class Projects extends Component {
                     <h1>Description</h1>
                     <p>
                       OTOI is an application that allows you to keep track of
-                      information and to have it all in a central place. You are
-                      able to track your skills, agendas, and applications.
+                      information in a central place. You are able to track your
+                      skills, agendas, and applications respectively.
                     </p>
                     <h1>Technologies</h1>
                     <p>Express, MongoDB, Node.js, React.</p>
@@ -76,10 +76,10 @@ class Projects extends Component {
           <Card className="text-center cards" border="primary">
             <Card.Img className="carder" variant="top" src={Rolodex} />
             <Card.Body>
-              <Card.Title>Rolodex</Card.Title>
+              <Card.Title className="modtex">Rolodex</Card.Title>
               <Card.Text>
                 <Button
-                  className="primary"
+                  className="primary modtex"
                   onClick={() => this.setModal2Visible(true)}
                 >
                   More Info
@@ -109,10 +109,10 @@ class Projects extends Component {
           <Card className="text-center cards" border="primary">
             <Card.Img className="carder" variant="top" src={MemoryMatch} />
             <Card.Body>
-              <Card.Title>Memory Match</Card.Title>
+              <Card.Title className="modtex">Memory Match</Card.Title>
               <Card.Text>
                 <Button
-                  className="primary"
+                  className="primary modtex"
                   onClick={() => this.setModal3Visible(true)}
                 >
                   More Info
@@ -127,11 +127,12 @@ class Projects extends Component {
                   <div className="text-center modtex">
                     <h4>Description</h4>
                     <p>
-                      OTOI is an application that allows you to keep track of
-                      information and to have it all in a central place. You are
-                      able to track your skills, agendas, and applications.
+                      OTOI is an application that you will find useful in your
+                      endeavors allows you to keep track of your skills,
+                      agendas, and applications.
                     </p>
-                    <h5>Technologies</h5>
+
+                    <h1>Technologies</h1>
                     <p>Express, MongoDB, Node.js, React.</p>
                   </div>
                 </Modal>
@@ -142,10 +143,10 @@ class Projects extends Component {
           <Card className="text-center cards" border="primary">
             <Card.Img className="carder" variant="top" src={Pong} />
             <Card.Body>
-              <Card.Title>Pong</Card.Title>
+              <Card.Title className="modtex">Pong</Card.Title>
               <Card.Text>
                 <Button
-                  className="primary"
+                  className="primary modtex"
                   onClick={() => this.setModal4Visible(true)}
                 >
                   More Info

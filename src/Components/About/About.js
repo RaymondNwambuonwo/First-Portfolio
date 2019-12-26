@@ -29,25 +29,8 @@ class About extends Component {
   render() {
     return (
       <div>
-        <h1>Who is Raymond Nwambuonwo</h1>
-        <div>
-          <Button className="primary" onClick={this.showModal}>
-            Open Modal
-          </Button>
-          <Modal
-            title="Basic Modal"
-            visible={this.state.visible}
-            onOk={this.handleOk}
-            onCancel={this.handleCancel}
-            footer={[
-              <Button key="back" onClick={this.handleCancel}>
-                Ok
-              </Button>
-            ]}
-          >
-            <p>Some contents...</p>
-          </Modal>
-        </div>
+        <h1 className="text-center">About Me</h1>
+        <div></div>
 
         <div></div>
 

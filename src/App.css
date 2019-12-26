@@ -1,6 +1,17 @@
 body {
   padding: 0;
-  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  /* background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%); */
+  background: #e0eafc; /* fallback for old browsers, name of gradient color of sky */
+  background: -webkit-linear-gradient(
+    to right,
+    #cfdef3,
+    #e0eafc
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #cfdef3,
+    #e0eafc
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .containerr {
