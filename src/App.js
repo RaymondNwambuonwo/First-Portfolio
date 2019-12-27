@@ -25,6 +25,7 @@ function App() {
         <Route path="/" exact component={Home} />
         <Route path="/About" component={About} />
         <Route path="/Resume" component={Resume} />
+
         <Route path="/Projects" exact component={Projects} />
         <Route path="/Contact" component={Contact} />
         <footer className="footy">

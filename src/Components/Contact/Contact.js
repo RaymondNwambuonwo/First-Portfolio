@@ -6,13 +6,9 @@ class Contact extends Component {
   render() {
     return (
       <div className="Contact">
-        <h2 className="Contact-header"> Keep in Touch</h2>
-        <blockquote className="Contact-quote">
-          The most important things in life are the connections you make with
-          others. <cite> ~ Tom Ford</cite>
-        </blockquote>
+        <h2 className="Contact-header"> Contact Me</h2>
 
-        <p className="Contact-email">RaymondNwambuonwo@gmail.com</p>
+        <h2 className="Contact-email">RaymondNwambuonwo@gmail.com</h2>
         <a
           href="mailto:RaymondNwambuonwo@gmail.com"
           title="click to email me"
@@ -23,7 +19,7 @@ class Contact extends Component {
             <Icon type="mail" theme="twoTone" />
           </span>
         </a>
-        <p className="Contact-phone">Phone: (347)-748-3900</p>
+        <h2 className="Contact-phone">Phone: (347)-748-3900</h2>
       </div>
     );
   }

@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./Navbar.css";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
+import RayResume from "../Images/RaymondNwambuonwoResume.pdf";
 
 class Navy extends Component {
   render() {
@@ -25,9 +26,14 @@ class Navy extends Component {
               <Link to="/Projects" className="nav-link">
                 Projects
               </Link>
-              <Link to="/Resume" className="nav-link">
+              <a
+                href={RayResume}
+                target="__blank"
+                rel="noopener noreferrer"
+                className="nav-link"
+              >
                 Resume
-              </Link>
+              </a>
               <Link to="/Contact" className="nav-link">
                 Contact
               </Link>
