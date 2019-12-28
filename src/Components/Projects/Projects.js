@@ -6,8 +6,11 @@ import Rolodex from "../Images/Rolodex.gif";
 import OTOI from "../Images/OTOI.gif";
 import MemoryMatch from "../Images/memory.gif";
 import Pong from "../Images/pong.gif";
+import CoTripper from "../Images/cotripper.png";
+import CompLibrary from "../Images/ComponentLibrary.gif";
 import { Modal } from "antd";
 import Button from "react-bootstrap/Button";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "antd/dist/antd.css";
 
 class Projects extends Component {
@@ -34,6 +37,14 @@ class Projects extends Component {
 
   setModal4Visible(modal4Visible) {
     this.setState({ modal4Visible });
+  }
+
+  setModal5Visible(modal5Visible) {
+    this.setState({ modal5Visible });
+  }
+
+  setModal6Visible(modal6Visible) {
+    this.setState({ modal6Visible });
   }
 
   render() {
@@ -75,6 +86,14 @@ class Projects extends Component {
                     </p>
                     <h4>Technologies</h4>
                     <p className="paratex">Express, MongoDB, Node.js, React.</p>
+                    <a
+                      className="iconic"
+                      href="https://github.com/RaymondNwambuonwo/Otoi"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FontAwesomeIcon icon={["fab", "github"]} />
+                    </a>
                   </div>
                 </Modal>
               </Card.Text>
@@ -117,6 +136,14 @@ class Projects extends Component {
                     </p>
                     <h4>Technologies</h4>
                     <p className="paratex">PeeWee, Pyscopg2, Python.</p>
+                    <a
+                      className="iconic"
+                      href="https://github.com/RaymondNwambuonwo/PythonRolodex"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FontAwesomeIcon icon={["fab", "github"]} />
+                    </a>
                   </div>
                 </Modal>
               </Card.Text>
@@ -158,9 +185,16 @@ class Projects extends Component {
                       have a bit of fun matching up some popular languages and
                       frameworks!
                     </p>
-
                     <h4>Technologies</h4>
                     <p className="paratex">HTML, CSS, JavaScript.</p>
+                    <a
+                      className="iconic"
+                      href="https://github.com/RaymondNwambuonwo/Memory-Match"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FontAwesomeIcon icon={["fab", "github"]} />
+                    </a>
                   </div>
                 </Modal>
               </Card.Text>
@@ -203,6 +237,121 @@ class Projects extends Component {
                     </p>
                     <h4>Technologies</h4>
                     <p className="paratex">Python, Turtle.</p>
+                    <a
+                      className="iconic"
+                      href="https://github.com/RaymondNwambuonwo/PythonPongGame"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FontAwesomeIcon icon={["fab", "github"]} />
+                    </a>
+                  </div>
+                </Modal>
+              </Card.Text>
+            </Card.Body>
+          </Card>
+
+          <Card className="text-center cards" border="light">
+            <Card.Img className="carder" variant="top" src={CompLibrary} />
+            <Card.Body>
+              <Button
+                variant="link"
+                href="raymondnwambuonwocomponentlibrary.netlify.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Card.Title className="modtex">Component Library</Card.Title>
+              </Button>
+              <Card.Text>
+                <Button
+                  className="primary modtex"
+                  variant="light"
+                  onClick={() => this.setModal5Visible(true)}
+                >
+                  More Info
+                </Button>
+                <Modal
+                  title="Component Library"
+                  centered
+                  visible={this.state.modal5Visible}
+                  onOk={() => this.setModal5Visible(false)}
+                  onCancel={() => this.setModal5Visible(false)}
+                >
+                  <div className="text-center modtex">
+                    <h3>Description</h3>
+                    <p className="paratex">
+                      This is a library made with storybook filled with commonly
+                      used components such as buttons, dropdown menus,
+                      redeem/vouchers, and many more.
+                    </p>
+                    <h4>Technologies</h4>
+                    <p className="paratex">
+                      HTML, CSS, JavaScript, React, Storybook.
+                    </p>
+                    <a
+                      className="iconic"
+                      href="https://github.com/RaymondNwambuonwo/ComponentLibrary"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FontAwesomeIcon icon={["fab", "github"]} />
+                    </a>
+                  </div>
+                </Modal>
+              </Card.Text>
+            </Card.Body>
+          </Card>
+
+          <Card className="text-center cards" border="light">
+            <Card.Img className="carder" variant="top" src={CoTripper} />
+            <Card.Body>
+              <Button
+                variant="link"
+                href="https://github.com/CotripperPlatform/CoTrip"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Card.Title className="modtex">CoTripper</Card.Title>
+              </Button>
+              <Card.Text>
+                <Button
+                  className="primary modtex"
+                  variant="light"
+                  onClick={() => this.setModal6Visible(true)}
+                >
+                  More Info
+                </Button>
+                <Modal
+                  title="CoTripper"
+                  centered
+                  visible={this.state.modal6Visible}
+                  onOk={() => this.setModal6Visible(false)}
+                  onCancel={() => this.setModal6Visible(false)}
+                >
+                  <div className="text-center modtex">
+                    <h3>Description</h3>
+                    <p className="paratex">
+                      CoTripper is an application that facilitates organized
+                      group travel experiences for single-mothers. My
+                      contribution consisted of establishing an icon component
+                      library, creating the message inbox, and collaborating on
+                      the creation of the new user page. This project consisted
+                      of a team of 25 engineers where agile methodologies were
+                      used to conduct team stand-ups and manage project
+                      road-blocks to meet deadlines.
+                    </p>
+                    <h4>Technologies</h4>
+                    <p className="paratex">
+                      Python, Django, PostgreSQL, PeeWee, Storybook, React.
+                    </p>
+                    <a
+                      className="iconic"
+                      href="https://github.com/CotripperPlatform/CoTrip"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FontAwesomeIcon icon={["fab", "github"]} />
+                    </a>
                   </div>
                 </Modal>
               </Card.Text>

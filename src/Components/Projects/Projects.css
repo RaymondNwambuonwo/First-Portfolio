@@ -1,10 +1,15 @@
 .card-deck {
-  width: 90vw;
+  width: 100vw;
 }
 
 .decker {
   display: flex;
   justify-content: center;
+}
+
+.deck {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .carder {

@@ -12,3 +12,10 @@
 .homesum {
   font-family: "Rokkitt", serif;
 }
+
+.skill {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.3em;
+  color: #0096cc;
+}
