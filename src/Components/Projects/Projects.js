@@ -80,9 +80,19 @@ class Projects extends Component {
                   <div className="text-center modtex">
                     <h3>Description</h3>
                     <p className="paratex">
-                      OTOI is an application that allows you to keep track of
-                      information in a central place. You are able to track your
-                      skills, agendas, and applications respectively.
+                      OTOI was developed at General Assembly as a group project
+                      consiting of 3 engineers. OTOI is an application that
+                      allows you to keep track of information in a central
+                      place. You are able to track your skills, agendas, and
+                      applications respectively.
+                    </p>
+                    <h3>Future Development</h3>
+                    <p className="paratex">
+                      In the future we are looking to add authentication to
+                      allow users to make profiles and login to see their
+                      specific data. We will also like to make it mobile
+                      responsive as well. For now users are able to to do what
+                      was mentioned above.
                     </p>
                     <h4>Technologies</h4>
                     <p className="paratex">Express, MongoDB, Node.js, React.</p>
@@ -133,6 +143,12 @@ class Projects extends Component {
                       you to store newly made contacts by entering information
                       such as their name, date of birth, phone number, and
                       email.
+                    </p>
+                    <h3>Future Development</h3>
+                    <p className="paratex">
+                      In the future I am looking to add a graphical user
+                      interface (GUI). As of now it can be used in the command
+                      line.
                     </p>
                     <h4>Technologies</h4>
                     <p className="paratex">PeeWee, Pyscopg2, Python.</p>
@@ -185,6 +201,13 @@ class Projects extends Component {
                       have a bit of fun matching up some popular languages and
                       frameworks!
                     </p>
+                    <h3>Future Development</h3>
+                    <p className="paratex">
+                      In the future I am looking to add a menu and more stages
+                      with cards that incorporate more things that are
+                      associated with coding. For now users can simply play the
+                      one stage that is available.
+                    </p>
                     <h4>Technologies</h4>
                     <p className="paratex">HTML, CSS, JavaScript.</p>
                     <a
@@ -235,6 +258,12 @@ class Projects extends Component {
                       the traditional pong game but was created as a command
                       line application with a graphical user interface.
                     </p>
+                    <h3>Future Development</h3>
+                    <p className="paratex">
+                      In the future I am looking to add an option to play
+                      against the computer and to choose colors of paddles and
+                      ball.
+                    </p>
                     <h4>Technologies</h4>
                     <p className="paratex">Python, Turtle.</p>
                     <a
@@ -284,6 +313,12 @@ class Projects extends Component {
                       used components such as buttons, dropdown menus,
                       redeem/vouchers, and many more.
                     </p>
+                    <h3>Future Development</h3>
+                    <p className="paratex">
+                      In the future I am looking to add more components to
+                      choose from as this will minimize the need to rebuild
+                      things with each app.
+                    </p>
                     <h4>Technologies</h4>
                     <p className="paratex">
                       HTML, CSS, JavaScript, React, Storybook.
@@ -332,7 +367,7 @@ class Projects extends Component {
                     <h3>Description</h3>
                     <p className="paratex">
                       CoTripper is an application that facilitates organized
-                      group travel experiences for single-mothers. My
+                      group travel experiences for single mothers. My
                       contribution consisted of establishing an icon component
                       library, creating the message inbox, and collaborating on
                       the creation of the new user page. This project consisted

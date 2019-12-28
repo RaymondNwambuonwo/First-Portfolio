@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./Navbar.css";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import RayResume from "../Images/RaymondNwambuonwoResume.pdf";
+import RayResume from "../Images/MyResume.pdf";
 
 class Navy extends Component {
   render() {
