@@ -120,7 +120,7 @@ class Projects extends Component {
                   More Info
                 </Button>
                 <Modal
-                  title="OTOI"
+                  title="Rolodex"
                   centered
                   visible={this.state.modal2Visible}
                   onOk={() => this.setModal2Visible(false)}
@@ -170,7 +170,7 @@ class Projects extends Component {
                   More Info
                 </Button>
                 <Modal
-                  title="OTOI"
+                  title="MemoryMatch"
                   centered
                   visible={this.state.modal3Visible}
                   onOk={() => this.setModal3Visible(false)}
@@ -221,7 +221,7 @@ class Projects extends Component {
                   More Info
                 </Button>
                 <Modal
-                  title="OTOI"
+                  title="Pong"
                   centered
                   visible={this.state.modal4Visible}
                   onOk={() => this.setModal4Visible(false)}
