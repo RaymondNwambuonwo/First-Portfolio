@@ -256,7 +256,7 @@ class Projects extends Component {
             <Card.Body>
               <Button
                 variant="link"
-                href="raymondnwambuonwocomponentlibrary.netlify.com"
+                href="https://raymondnwambuonwocomponentlibrary.netlify.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >
