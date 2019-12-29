@@ -14,13 +14,11 @@ body {
 }
 
 .footy {
-  /* position: absolute;
-  bottom: 0.3rem;
+  position: fixed;
+  bottom: 0;
   right: 0;
   left: 0;
-  height: 30px; */
-  /* min-height: 10px; */
-  /* border-top: 1px solid black; */
+  height: 30px;
 }
 
 .contain {
