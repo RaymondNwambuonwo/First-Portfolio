@@ -28,3 +28,35 @@
   font-size: large;
   color: slategray;
 }
+
+@media (min-width: 480px) {
+  .paratex {
+    text-align: center;
+    font-size: 1rem;
+  }
+  .modtex {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .paratex {
+    text-align: center;
+    font-size: 1rem;
+  }
+  .modtex {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (min-width: 992px) {
+  .paratex {
+    text-align: center;
+    font-size: 1rem;
+  }
+  .modtex {
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -31,7 +31,7 @@ function App() {
           <Route path="/Contact" component={Contact} />
         </Router>
       </div>
-      <div className="footy">
+      {/* <div className="footy">
         <div className="footydiv">
           <a
             className="iconic"
@@ -58,7 +58,7 @@ function App() {
             <FontAwesomeIcon icon={["fab", "medium"]} />
           </a>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

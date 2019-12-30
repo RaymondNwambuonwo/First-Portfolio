@@ -12,6 +12,7 @@ import { Modal } from "antd";
 import Button from "react-bootstrap/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "antd/dist/antd.css";
+import Footer from "../Footer/Footer";
 
 class Projects extends Component {
   state = { visible: false };
@@ -393,6 +394,7 @@ class Projects extends Component {
             </Card.Body>
           </Card>
         </CardDeck>
+        <Footer />
       </div>
     );
   }

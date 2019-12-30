@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./Contact.css";
 import { Icon } from "antd";
+import Footer from "../Footer/Footer";
 
 class Contact extends Component {
   render() {
@@ -20,6 +21,7 @@ class Contact extends Component {
           </span>
         </a>
         <p className="Contact-phone">Phone: (347)-748-3900</p>
+        <Footer />
       </div>
     );
   }

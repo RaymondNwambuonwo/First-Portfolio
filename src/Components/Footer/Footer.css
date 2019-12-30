@@ -1,0 +1,23 @@
+.footy {
+  position: fixed;
+  /* top: 0; */
+  bottom: 0;
+  right: 0;
+  left: 0;
+  max-height: 50px;
+}
+
+.footydiv {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 1rem;
+  height: 100%;
+  /* width: 59rem; */
+}
+
+.iconic {
+  font-size: 1.5rem;
+  color: black;
+  text-decoration: none;
+}

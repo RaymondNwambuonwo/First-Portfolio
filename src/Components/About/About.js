@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./About.css";
+import Footer from "../Footer/Footer";
 import Image from "react-bootstrap/Image";
 import Figure from "react-bootstrap/Figure";
 import Ray from "../Images/RayRay.png";
@@ -38,6 +39,7 @@ class About extends Component {
           traveling, poetry, music, outdoor activities, spending time with
           friends & family, and watching movies.
         </p>
+        <Footer />
       </div>
     );
   }
