@@ -12,7 +12,6 @@ import { Modal } from "antd";
 import Button from "react-bootstrap/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "antd/dist/antd.css";
-import Footer from "../Footer/Footer";
 
 class Projects extends Component {
   state = { visible: false };
@@ -52,7 +51,11 @@ class Projects extends Component {
     return (
       <div className="decker">
         <CardDeck>
-          <Card className="text-center cards" border="light">
+          <Card
+            style={{ flex: 1 }}
+            className="text-center cards"
+            border="light"
+          >
             <Card.Img className="carder" variant="top" src={OTOI} />
             <Card.Body>
               <Button
@@ -394,7 +397,6 @@ class Projects extends Component {
             </Card.Body>
           </Card>
         </CardDeck>
-        <Footer />
       </div>
     );
   }

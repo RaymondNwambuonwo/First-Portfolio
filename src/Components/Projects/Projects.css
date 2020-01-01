@@ -7,18 +7,23 @@
   justify-content: center;
 }
 
-.deck {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .carder {
   height: 15rem;
 }
 
+/* .carddeck {
+  display: flex;
+  flex: wrap;
+} */
+
 .cards {
   background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
+
+/* .cards:nth-child(2) {
+  order: -1;
+  flex-basis: 100%;
+} */
 
 .modtex {
   font-family: "Bangers", cursive;

@@ -5,10 +5,11 @@
   align-items: center;
 }
 .About-paragraph {
-  /* margin-bottom: 0; */
+  margin-bottom: 0;
+  text-align: center;
 }
 .About-about-me {
-  /* margin-bottom: 1rem;  */
+  margin-bottom: 1rem;
 }
 
 @media all and (min-width: 800px) {

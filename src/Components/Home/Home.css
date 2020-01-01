@@ -1,21 +1,34 @@
-.Raymond {
-  /* display: flex;
-  justify-content: center; */
+.homecontainer {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1rem;
+}
+
+.titlename {
+  margin-bottom: 1rem;
+  font-size: 2rem;
   text-align: center;
 }
 
-.raypic {
-  width: 50vh;
-  border-radius: 50%;
+.fig {
+  text-align: center;
+}
+
+.profilepic {
+  width: 25rem;
 }
 
 .homesum {
-  font-family: "Rokkitt", serif;
+  text-align: center;
+  font-size: 1.2rem;
 }
 
 .skill {
-  font-weight: bold;
+  /* font-weight: bold; */
   font-style: italic;
-  font-size: 1.3em;
+  font-size: 1em;
   color: #0096cc;
 }
