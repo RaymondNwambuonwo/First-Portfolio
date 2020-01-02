@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import "./Home.css";
 import Ray from "../Images/RayRay.png";
 import Footer from "../Footer/Footer";
+import Card from "react-bootstrap/Card";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 class Home extends Component {
   render() {
@@ -15,18 +17,20 @@ class Home extends Component {
           <h5 className="titlename">Software Engineer</h5>
           <p className="homesum">
             Software Engineer with a background in secondary and higher
-            education. My aptitude for learning and applying new concepts led me
-            to General Assembly where I was thoroughly immersed in the field of
-            programming. I am proficient in Javascript and acquired front-end
-            skills in CSS, HTML, React.js and back-end skills in
-            MongoDB/Mongoose, Node.js, Express, PostgreSQL, Django, Python. I
-            was able to work in a community with peers who continue to push me
-            to become a well-rounded software engineer. I am continuously
-            looking to build upon my knowledge and skillset to improve as a
-            software engineer.
+            education. I was able to work in a community with peers who continue
+            to push me to become a well-rounded software engineer. I am
+            continuously looking to build upon my knowledge and skillset to
+            improve as a software engineer.
           </p>
+          {/* <h5 className="titlename">Skills</h5> */}
+          {/* <div className="skillset">
+            <i class="devicon-bootstrap-plain-wordmark colored"></i>
+            <i class="devicon-css3-plain-wordmark colored"></i>
+            <i class="devicon-django-plain colored"></i>
+            <i class="devicon-git-plain-wordmark colored"></i>
+            <i class="devicon-html5-plain-wordmark colored"></i>
+          </div> */}
         </div>
-        <Footer />
       </div>
     );
   }

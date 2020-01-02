@@ -1,9 +1,11 @@
 .Contact {
-  padding: 1rem;
+  padding: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  min-height: 80vh;
+  /* border: 10px solid black; */
 }
 .Contact-header {
   margin-bottom: 1rem;

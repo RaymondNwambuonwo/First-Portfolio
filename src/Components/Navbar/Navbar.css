@@ -1,3 +1,12 @@
 .bord {
-  border-bottom: 1px solid black;
+  border-bottom: 0.5px solid royalblue;
+}
+
+.nav-link {
+  font-family: "Bangers", cursive;
+}
+
+.nav-link:hover {
+  font-family: "Acme", sans-serif;
+  font-size: 30px;
 }

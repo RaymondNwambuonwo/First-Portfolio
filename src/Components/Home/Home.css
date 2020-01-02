@@ -2,15 +2,15 @@
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 0 1rem;
+  min-height: 80vh;
 }
 
 .titlename {
   margin-bottom: 1rem;
-  font-size: 2rem;
+  font-size: 3rem;
   text-align: center;
+  /* font-family: "Bangers", cursive; */
+  font-family: "Acme", sans-serif;
 }
 
 .fig {
@@ -24,11 +24,25 @@
 .homesum {
   text-align: center;
   font-size: 1.2rem;
+  font-family: "Acme", sans-serif;
+  margin-left: 200px;
+  margin-right: 200px;
 }
 
-.skill {
+.skillset {
+  display: flex;
+  justify-content: center;
   /* font-weight: bold; */
   font-style: italic;
-  font-size: 1em;
-  color: #0096cc;
+  font-size: 10rem;
+  /* color: #0096cc; */
+}
+
+@media all and (max-width: 800px) {
+  .homesum {
+    margin: 0;
+  }
+  .profilepic {
+    width: 18rem;
+  }
 }
