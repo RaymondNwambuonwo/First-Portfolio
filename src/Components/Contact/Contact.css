@@ -4,14 +4,18 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  min-height: 80vh;
-  /* border: 10px solid black; */
+  font-family: "Bangers", cursive;
+  font-size: 2rem;
+  /* border: 1px solid black; */
+  margin-left: 10rem;
+  margin-right: 10rem;
 }
 .Contact-header {
-  margin-bottom: 1rem;
-}
-.Contact-quote {
-  width: 50%;
+  /* margin-bottom: 1rem; */
+  background-image: linear-gradient(to right, blue 75%, transparent 75%);
+  background-position: 0 1.04em;
+  background-repeat: repeat-x;
+  background-size: 8px 3px;
 }
 .Contact-email {
   margin: 1rem 0 -0.1rem 0;
@@ -19,24 +23,19 @@
 .Contact-phone {
   text-align: left;
 }
-
 .fa-envelope {
   margin-bottom: 1rem;
 }
 
-@media all and (min-width: 768px) {
-  .Contact-header {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+@media all and (max-width: 800px) {
+  .Contact {
+    font-size: 1rem;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
   }
-  .Contact-quote {
-    font-size: 1.5rem;
-  }
-  .fa-envelope {
-    font-size: 1.5rem;
-  }
-  .Contact-email,
   .Contact-phone {
-    font-size: 1.5rem;
+    text-align: center;
   }
 }

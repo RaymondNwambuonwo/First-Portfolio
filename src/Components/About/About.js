@@ -26,10 +26,12 @@ class About extends Component {
           My interest in programming was not traditional like that of schooling,
           but of pure curiosity. Initially I did some research on the field of
           programming and the first thing that peaked my interest was how you
-          can implement something you learned immediately and see results. I
-          find programming to be nothing short of exciting, as you are able to
-          bring thoughts and ideas to life in this virtual world located in the
-          devices we use daily.
+          can implement something you learned immediately and see results. This
+          led me to General Assembly, as I enrolled in their three month
+          Software Engineering program where I was thoroughly immersed in the
+          field. I find programming to be nothing short of exciting, as you are
+          able to bring thoughts and ideas to life in this virtual world located
+          in the devices we use daily.
         </p>
         <hr />
         <h2 className="About-about-me">My Interest</h2>

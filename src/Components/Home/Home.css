@@ -29,12 +29,14 @@
   margin-right: 200px;
 }
 
-.skillset {
+.skillcards {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  text-align: center;
+  font-size: 5rem;
   /* font-weight: bold; */
-  font-style: italic;
-  font-size: 10rem;
+  /* font-style: italic;
+  font-size: 10rem; */
   /* color: #0096cc; */
 }
 
@@ -44,5 +46,8 @@
   }
   .profilepic {
     width: 18rem;
+  }
+  .skillcards {
+    font-size: 1.8rem;
   }
 }

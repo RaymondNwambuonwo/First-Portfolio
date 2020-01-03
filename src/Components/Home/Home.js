@@ -22,14 +22,19 @@ class Home extends Component {
             continuously looking to build upon my knowledge and skillset to
             improve as a software engineer.
           </p>
-          {/* <h5 className="titlename">Skills</h5> */}
-          {/* <div className="skillset">
+          <div className="skillcards">
             <i class="devicon-bootstrap-plain-wordmark colored"></i>
             <i class="devicon-css3-plain-wordmark colored"></i>
             <i class="devicon-django-plain colored"></i>
-            <i class="devicon-git-plain-wordmark colored"></i>
+            <i class="devicon-express-original-wordmark colored"></i>
             <i class="devicon-html5-plain-wordmark colored"></i>
-          </div> */}
+            <i class="devicon-javascript-plain colored"></i>
+            <i class="devicon-mongodb-plain-wordmark colored"></i>
+            <i class="devicon-nodejs-plain-wordmark colored"></i>
+            <i class="devicon-postgresql-plain-wordmark colored"></i>
+            <i class="devicon-python-plain-wordmark colored"></i>
+            <i class="devicon-react-original-wordmark colored"></i>
+          </div>
         </div>
       </div>
     );

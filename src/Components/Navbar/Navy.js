@@ -4,6 +4,8 @@ import "./Navbar.css";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import RayResume from "../Images/RaymondNwambuonwoResume.pdf";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Icon } from "antd";
 
 class Navy extends Component {
   render() {
@@ -12,8 +14,32 @@ class Navy extends Component {
         <Navbar className="bord" expand="xl">
           <Nav>
             <Navbar.Brand>
-              <Link to="/" className="nav-link">
-                Raymond Nwambuonwo
+              <a
+                className="iconic"
+                href="https://www.linkedin.com/in/raymondnwambuonwo/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon icon={["fab", "linkedin"]} size="xs" />
+              </a>
+            </Navbar.Brand>
+          </Nav>
+          <Nav>
+            <Navbar.Brand>
+              <a
+                className="iconic"
+                href="https://github.com/RaymondNwambuonwo"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon icon={["fab", "github"]} size="xs" />
+              </a>
+            </Navbar.Brand>
+          </Nav>
+          <Nav>
+            <Navbar.Brand>
+              <Link to="/" className="iconic">
+                <FontAwesomeIcon icon="home" size="xs" />
               </Link>
             </Navbar.Brand>
           </Nav>
