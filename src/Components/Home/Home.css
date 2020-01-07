@@ -34,10 +34,19 @@
   justify-content: space-evenly;
   text-align: center;
   font-size: 5rem;
-  /* font-weight: bold; */
-  /* font-style: italic;
-  font-size: 10rem; */
-  /* color: #0096cc; */
+}
+
+i {
+  animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotateY(0);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
 }
 
 @media all and (max-width: 800px) {
@@ -49,5 +58,8 @@
   }
   .skillcards {
     font-size: 1.8rem;
+  }
+  i {
+    animation: none;
   }
 }
