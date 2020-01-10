@@ -11,9 +11,9 @@ class Home extends Component {
       <div>
         <div className="Homecontainer">
           <h2 className="titlename">Raymond Nwambuonwo</h2>
-          <figure className="fig">
-            <img className="profilepic" src={Ray} alt="" />
-          </figure>
+          {/* <div className="fig"> */}
+          <img className="profilepic" src={Ray} alt="" />
+          {/* </div> */}
           <h5 className="titlename">Software Engineer</h5>
           <p className="homesum">
             Software Engineer with an M.S. in Higher Education & Student Affairs
