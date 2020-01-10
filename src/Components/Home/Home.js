@@ -16,11 +16,11 @@ class Home extends Component {
           </figure>
           <h5 className="titlename">Software Engineer</h5>
           <p className="homesum">
-            Software Engineer with a background in secondary and higher
-            education. I was able to work in a community with peers who continue
-            to push me to become a well-rounded software engineer. I am
-            continuously looking to build upon my knowledge and skillset to
-            improve as a software engineer.
+            Software Engineer with an M.S. in Higher Education & Student Affairs
+            Administration. In my academic endeavours, I was able to work in a
+            community with peers who continue to push me to become a
+            well-rounded software engineer. I am continuously looking to build
+            upon my knowledge and skillset to improve as a software engineer.
           </p>
           <div className="skillcards">
             <i class="devicon-bootstrap-plain-wordmark colored"></i>
