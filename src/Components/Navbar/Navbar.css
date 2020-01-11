@@ -5,19 +5,27 @@
 
 .nav-link {
   font-family: "Bangers", cursive;
+  transition: opacity 500ms ease-in-out;
+  opacity: 1;
+}
+
+.nav-link:hover {
+  /* font-family: "Acme", sans-serif; */
+  /* font-size: 30px; */
+  border-bottom: 4px solid #f5f7fa;
+  opacity: 0.5;
+  /* right: 0; */
 }
 
 .iconic {
   font-size: 1.9rem;
   color: black;
+  opacity: 1;
+  transition: opacity 0.25s ease-in-out;
 }
 
 .iconic:hover {
   /* font-size: 2.5rem; */
-  color: blue;
-}
-
-.nav-link:hover {
-  font-family: "Acme", sans-serif;
-  font-size: 30px;
+  /* color: #f5f7fa; */
+  opacity: 0.5;
 }

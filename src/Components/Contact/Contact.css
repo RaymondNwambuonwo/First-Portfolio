@@ -1,4 +1,4 @@
-.Contact {
+/* .Contact {
   padding: 3rem;
   display: flex;
   flex-direction: column;
@@ -6,18 +6,18 @@
   text-align: center;
   font-family: "Bangers", cursive;
   font-size: 2rem;
-  /* border: 1px solid black; */
+  border: 1px solid black;
   margin-left: 10rem;
   margin-right: 10rem;
-}
-.Contact-header {
-  /* margin-bottom: 1rem; */
+} */
+/* .Contact-header {
+  margin-bottom: 1rem;
   background-image: linear-gradient(to right, blue 75%, transparent 75%);
   background-position: 0 1.04em;
   background-repeat: repeat-x;
   background-size: 8px 3px;
-}
-.Contact-email {
+} */
+/* .Contact-email {
   margin: 1rem 0 -0.1rem 0;
 }
 .Contact-phone {
@@ -25,9 +25,9 @@
 }
 .fa-envelope {
   margin-bottom: 1rem;
-}
+} */
 
-@media all and (max-width: 800px) {
+/* @media all and (max-width: 800px) {
   .Contact {
     font-size: 1rem;
     align-items: center;
@@ -37,5 +37,32 @@
   }
   .Contact-phone {
     text-align: center;
+  }
+} */
+
+.form-group {
+  width: 40rem;
+}
+
+.contact-form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#ContactFormText.contact-form__input {
+  height: 150px;
+}
+
+.Contact-header {
+  text-align: center;
+  font-family: "Acme", sans-serif;
+  font-size: 3rem;
+}
+
+@media all and (max-width: 800px) {
+  .form-group {
+    width: 18rem;
   }
 }

@@ -1,30 +1,138 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import "./Contact.css";
 import { Icon } from "antd";
+import emailjs from "emailjs-com";
+import { Button, Form, FormGroup, Input } from "reactstrap";
 
-class Contact extends Component {
-  render() {
-    return (
-      <div>
-        <div className="Contact">
-          <h2 className="Contact-header"> Contact </h2>
+const ContactForm = props => {
+  const [values, setValues] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: ""
+  });
 
-          <p className="Contact-email">Email: RaymondNwambuonwo@gmail.com</p>
-          <a
-            href="mailto:RaymondNwambuonwo@gmail.com"
-            title="click to email me"
-            rel="noopener noreferrer"
-            className="Contact-icon-link"
-          >
-            <div>
-              <Icon type="mail" theme="twoTone" />
-            </div>
-          </a>
-          <p className="Contact-phone">Mobile Phone: (347)-748-3900</p>
-        </div>
-      </div>
-    );
-  }
+  const handleSubmit = e => {
+    e.preventDefault();
+    let templateParams = {
+      from_name: values.name,
+      user_email: values.email,
+      subject: values.subject,
+      message: values.message
+    };
+    emailjs
+      .send(
+        "default_service",
+        "template_QgwnQKbu",
+        templateParams,
+        "user_Lo9YgEokWTQHVXgT4fAPS"
+      )
+      .then(
+        result => {
+          console.log(result.text);
+        },
+        error => {
+          console.log(error.text);
+        }
+      );
+    resetForm();
+  };
+  const resetForm = () => {
+    setValues({ name: "", email: "", subject: "", message: "" });
+  };
+  const handleInputChange = e => {
+    const { name, value } = e.target;
+    setValues({ ...values, [name]: value });
+  };
+  return (
+    <div>
+      <h2 className="Contact-header"> Contact </h2>
+      <Form className="contact-form" onSubmit={handleSubmit}>
+        <FormGroup>
+          <Input
+            type="text"
+            name="name"
+            id="Name"
+            placeholder="NAME"
+            className="contact-form__input"
+            value={values.name}
+            onChange={handleInputChange}
+            required
+          />
+        </FormGroup>
+        <FormGroup>
+          <Input
+            type="email"
+            name="email"
+            id="ContactFormEmail"
+            placeholder="EMAIL"
+            className="contact-form__input"
+            value={values.email}
+            onChange={handleInputChange}
+            required
+          />
+        </FormGroup>
+        <FormGroup>
+          <Input
+            type="text"
+            name="subject"
+            id="Subject"
+            placeholder="SUBJECT"
+            className="contact-form__input"
+            value={values.subject}
+            onChange={handleInputChange}
+            required
+          />
+        </FormGroup>
+        <FormGroup>
+          <Input
+            type="textarea"
+            name="message"
+            id="ContactFormText"
+            placeholder="MESSAGE"
+            className="contact-form__input"
+            value={values.message}
+            onChange={handleInputChange}
+            required
+          />
+        </FormGroup>
+
+        <Button type="submit">Submit</Button>
+      </Form>
+    </div>
+  );
+};
+
+export default ContactForm;
+
+{
+  /* //   return (
+//     <div>
+//       <div className="Contact">
+//         <h2 className="Contact-header"> Contact </h2>
+
+//         <p className="Contact-email">Email: RaymondNwambuonwo@gmail.com</p>
+//         <a */
 }
-
-export default Contact;
+{
+  /* //           href="mailto:RaymondNwambuonwo@gmail.com"
+//           title="click to email me"
+//           rel="noopener noreferrer"
+//           className="Contact-icon-link"
+//         >
+//           <div>
+//             <Icon type="mail" theme="twoTone" />
+//           </div>
+//         </a> */
+}
+{
+  /* //         <p className="Contact-phone">Mobile Phone: (347)-748-3900</p>
+//       </div> */
+}
+{
+  /* //     </div> */
+}
+{
+  /* //   );
+// } */
+}
