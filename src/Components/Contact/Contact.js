@@ -46,7 +46,7 @@ const ContactForm = props => {
   };
   return (
     <div>
-      <h2 className="Contact-header"> Contact </h2>
+      <h2 className="Contact-header"> Email Me </h2>
       <Form className="contact-form" onSubmit={handleSubmit}>
         <FormGroup>
           <Input
@@ -99,6 +99,17 @@ const ContactForm = props => {
 
         <Button type="submit">Submit</Button>
       </Form>
+      <div className="phonecontainer">
+        <div className="phonenumber">
+          <h1>Give Me A Call</h1>
+        </div>
+        <div className="phones">
+          <h3>
+            <Icon type="phone" theme="twoTone" />
+            347-748-3900
+          </h3>
+        </div>
+      </div>
     </div>
   );
 };

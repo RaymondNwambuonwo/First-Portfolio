@@ -1,45 +1,3 @@
-/* .Contact {
-  padding: 3rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  font-family: "Bangers", cursive;
-  font-size: 2rem;
-  border: 1px solid black;
-  margin-left: 10rem;
-  margin-right: 10rem;
-} */
-/* .Contact-header {
-  margin-bottom: 1rem;
-  background-image: linear-gradient(to right, blue 75%, transparent 75%);
-  background-position: 0 1.04em;
-  background-repeat: repeat-x;
-  background-size: 8px 3px;
-} */
-/* .Contact-email {
-  margin: 1rem 0 -0.1rem 0;
-}
-.Contact-phone {
-  text-align: left;
-}
-.fa-envelope {
-  margin-bottom: 1rem;
-} */
-
-/* @media all and (max-width: 800px) {
-  .Contact {
-    font-size: 1rem;
-    align-items: center;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-  }
-  .Contact-phone {
-    text-align: center;
-  }
-} */
-
 .form-group {
   width: 40rem;
 }
@@ -59,6 +17,17 @@
   text-align: center;
   font-family: "Acme", sans-serif;
   font-size: 3rem;
+}
+
+.phonecontainer {
+  padding-top: 2rem;
+}
+
+.phonenumber,
+.phones {
+  display: flex;
+  justify-content: center;
+  font-family: "Acme", sans-serif;
 }
 
 @media all and (max-width: 800px) {
