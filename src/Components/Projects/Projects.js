@@ -5,6 +5,9 @@ import Rolodex from "../Images/Rolodex.gif";
 import OTOI from "../Images/OTOI.gif";
 import MemoryMatch from "../Images/memory.gif";
 import Pong from "../Images/pong.gif";
+import StarWars from "../Images/starwars.gif";
+import Calculator from "../Images/calculator.gif";
+import TicTacToe from "../Images/tictactoe.gif";
 import CoTripper from "../Images/cotripper.png";
 import CompLibrary from "../Images/ComponentLibrary.gif";
 import { Modal } from "antd";
@@ -21,7 +24,10 @@ class Projects extends Component {
     modal3Visible: false,
     modal4Visible: false,
     modal5Visible: false,
-    modal6Visible: false
+    modal6Visible: false,
+    modal7Visible: false,
+    modal8Visible: false,
+    modal9Visible: false
   };
 
   setModal1Visible(modal1Visible) {
@@ -46,6 +52,18 @@ class Projects extends Component {
 
   setModal6Visible(modal6Visible) {
     this.setState({ modal6Visible });
+  }
+
+  setModal7Visible(modal7Visible) {
+    this.setState({ modal7Visible });
+  }
+
+  setModal8Visible(modal8Visible) {
+    this.setState({ modal8Visible });
+  }
+
+  setModal9Visible(modal9Visible) {
+    this.setState({ modal9Visible });
   }
 
   render() {
@@ -378,6 +396,159 @@ class Projects extends Component {
                   <a
                     className="iconic"
                     href="https://github.com/CotripperPlatform/CoTrip"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FontAwesomeIcon icon={["fab", "github"]} />
+                  </a>
+                </div>
+              </Modal>
+            </Card.Text>
+          </Card.Body>
+        </Card>
+
+        <Card className="text-center cards p-3 trip" border="light">
+          <Card.Img className="carder" variant="top" src={StarWars} />
+          <Card.Body>
+            <Button
+              variant="link"
+              href="https://intergalacticpeople.netlify.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Card.Title className="modtex">Intergalactic People</Card.Title>
+            </Button>
+            <Card.Text>
+              <Button
+                className="primary modtex"
+                variant="light"
+                onClick={() => this.setModal7Visible(true)}
+              >
+                More Info
+              </Button>
+              <Modal
+                title="Intergalactic People"
+                centered
+                visible={this.state.modal7Visible}
+                onOk={() => this.setModal7Visible(false)}
+                onCancel={() => this.setModal7Visible(false)}
+              >
+                <div className="text-center modtex">
+                  <h3>Description</h3>
+                  <p className="paratex">
+                    Intergalactic People is a MERN Stack application with full
+                    CRUD functionality that allows a user to create, update, and
+                    delete a character.
+                  </p>
+                  <h4>Technologies</h4>
+                  <p className="paratex">
+                    MongoDB/Mongoose, Express, React, & NodeJS.
+                  </p>
+                  <a
+                    className="iconic"
+                    href="https://github.com/RaymondNwambuonwo/StarWarsMernFrontend"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FontAwesomeIcon icon={["fab", "github"]} />
+                  </a>
+                </div>
+              </Modal>
+            </Card.Text>
+          </Card.Body>
+        </Card>
+
+        <Card className="text-center cards p-3 trip" border="light">
+          <Card.Img className="carder" variant="top" src={Calculator} />
+          <Card.Body>
+            <Button
+              variant="link"
+              href="https://raymondnwambuonwo.github.io/JSCalculator/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Card.Title className="modtex">Calculator</Card.Title>
+            </Button>
+            <Card.Text>
+              <Button
+                className="primary modtex"
+                variant="light"
+                onClick={() => this.setModal8Visible(true)}
+              >
+                More Info
+              </Button>
+              <Modal
+                title="Calculator"
+                centered
+                visible={this.state.modal8Visible}
+                onOk={() => this.setModal8Visible(false)}
+                onCancel={() => this.setModal8Visible(false)}
+              >
+                <div className="text-center modtex">
+                  <h3>Description</h3>
+                  <p className="paratex">
+                    This is a web calculator that was created using vanilla
+                    JavaScript.
+                  </p>
+                  <h4>Technologies</h4>
+                  <p className="paratex">HTML, CSS, & JavaScript.</p>
+                  <a
+                    className="iconic"
+                    href="https://github.com/RaymondNwambuonwo/JSCalculator"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FontAwesomeIcon icon={["fab", "github"]} />
+                  </a>
+                </div>
+              </Modal>
+            </Card.Text>
+          </Card.Body>
+        </Card>
+
+        <Card className="text-center cards p-3 trip" border="light">
+          <Card.Img className="carder" variant="top" src={TicTacToe} />
+          <Card.Body>
+            <Button
+              variant="link"
+              href="https://raymondnwambuonwo.github.io/Tic-Tac-Toe/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Card.Title className="modtex">Tic-Tac-Toe</Card.Title>
+            </Button>
+            <Card.Text>
+              <Button
+                className="primary modtex"
+                variant="light"
+                onClick={() => this.setModal9Visible(true)}
+              >
+                More Info
+              </Button>
+              <Modal
+                title="TicTacToe"
+                centered
+                visible={this.state.modal9Visible}
+                onOk={() => this.setModal9Visible(false)}
+                onCancel={() => this.setModal9Visible(false)}
+              >
+                <div className="text-center modtex">
+                  <h3>Description</h3>
+                  <p className="paratex">
+                    This is an application built using vanilla JavaScript to
+                    imitate the traditional game of TicTacToe.
+                  </p>
+                  <h3>Future Development</h3>
+                  <p className="paratex">
+                    In the future I am looking to add more style choices as
+                    opposed to colors. I am also looking to add the computer as
+                    an option for opponents.
+                  </p>
+                  <h4>Technologies</h4>
+                  <p className="paratex">HTML, CSS, & JavaScript.</p>
+                  <a
+                    className="iconic"
+                    href="https://github.com/RaymondNwambuonwo/Tic-Tac-Toe"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
