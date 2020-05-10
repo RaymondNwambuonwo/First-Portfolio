@@ -6,6 +6,9 @@ import OTOI from "../Images/OTOI.gif";
 import MemoryMatch from "../Images/memory.gif";
 import Pong from "../Images/pong.gif";
 import StarWars from "../Images/starwars.gif";
+import LinkShrink from "../Images/LinkShrink.gif";
+import CurrencyConverter from "../Images/CurrencyConverter.gif";
+import TypingGame from "../Images/TypingGame.gif";
 import Calculator from "../Images/calculator.gif";
 import TicTacToe from "../Images/tictactoe.gif";
 import CoTripper from "../Images/cotripper.png";
@@ -27,7 +30,10 @@ class Projects extends Component {
     modal6Visible: false,
     modal7Visible: false,
     modal8Visible: false,
-    modal9Visible: false
+    modal9Visible: false,
+    modal10Visible: false,
+    modal11Visible: false,
+    modal12Visible: false,
   };
 
   setModal1Visible(modal1Visible) {
@@ -64,6 +70,18 @@ class Projects extends Component {
 
   setModal9Visible(modal9Visible) {
     this.setState({ modal9Visible });
+  }
+
+  setModal10Visible(modal10Visible) {
+    this.setState({ modal10Visible });
+  }
+
+  setModal11Visible(modal11Visible) {
+    this.setState({ modal11Visible });
+  }
+
+  setModal12Visible(modal12Visible) {
+    this.setState({ modal12Visible });
   }
 
   render() {
@@ -549,6 +567,185 @@ class Projects extends Component {
                   <a
                     className="iconic"
                     href="https://github.com/RaymondNwambuonwo/Tic-Tac-Toe"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FontAwesomeIcon icon={["fab", "github"]} />
+                  </a>
+                </div>
+              </Modal>
+            </Card.Text>
+          </Card.Body>
+        </Card>
+
+        <Card className="text-center cards p-3 trip" border="light">
+          <Card.Img className="carder" variant="top" src={LinkShrink} />
+          <Card.Body>
+            <Button
+              variant="link"
+              href="https://github.com/RaymondNwambuonwo/Link-Shrink"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Card.Title className="modtex">Link Shrink</Card.Title>
+            </Button>
+            <Card.Text>
+              <Button
+                className="primary modtex"
+                variant="light"
+                onClick={() => this.setModal10Visible(true)}
+              >
+                More Info
+              </Button>
+              <Modal
+                title="Link Shrink"
+                centered
+                visible={this.state.modal10Visible}
+                onOk={() => this.setModal10Visible(false)}
+                onCancel={() => this.setModal10Visible(false)}
+              >
+                <div className="text-center modtex">
+                  <h3>Description</h3>
+                  <p className="paratex">
+                    I wanted to create a backend web application that shortened
+                    URL Links. My first time developing an application using
+                    only Node, MongoDB, and Express as well as the ShortID & EJS
+                    package. The concepts focused on was setting up an express
+                    server, dynamic routes, and using MongoDB/mongoose with
+                    express.
+                  </p>
+                  <h3>Future Development</h3>
+                  <p className="paratex">
+                    In the future I am looking to add a more dynamic style by
+                    creating a front end for the application.
+                  </p>
+                  <h4>Technologies</h4>
+                  <p className="paratex">
+                    NodeJS, MongoDB/Mongoose, Express, ShortID, & EJS.
+                  </p>
+                  <a
+                    className="iconic"
+                    href="https://github.com/RaymondNwambuonwo/Link-Shrink"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FontAwesomeIcon icon={["fab", "github"]} />
+                  </a>
+                </div>
+              </Modal>
+            </Card.Text>
+          </Card.Body>
+        </Card>
+
+        <Card className="text-center cards p-3 trip" border="light">
+          <Card.Img className="carder" variant="top" src={CurrencyConverter} />
+          <Card.Body>
+            <Button
+              variant="link"
+              href="https://github.com/RaymondNwambuonwo/React-Money-Converter"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Card.Title className="modtex">CurrencyConverter</Card.Title>
+            </Button>
+            <Card.Text>
+              <Button
+                className="primary modtex"
+                variant="light"
+                onClick={() => this.setModal11Visible(true)}
+              >
+                More Info
+              </Button>
+              <Modal
+                title="CurrencyConverter"
+                centered
+                visible={this.state.modal11Visible}
+                onOk={() => this.setModal11Visible(false)}
+                onCancel={() => this.setModal11Visible(false)}
+              >
+                <div className="text-center modtex">
+                  <h3>Description</h3>
+                  <p className="paratex">
+                    The purpose of this project was to understand and implement
+                    the use of the hooks useState & useEffect, data binding, and
+                    utilize and interact with APIs using react. For this simple
+                    application, I chose to work with an external API, exchange
+                    rates, and create a currency covnerter where the user can
+                    convert any currency they select from a drop down menu.
+                  </p>
+                  <h3>Future Development</h3>
+                  <p className="paratex">
+                    In the future I am looking to add a more dynamic style by
+                    working with a new CSS framework I have not used before.
+                  </p>
+                  <h4>Technologies</h4>
+                  <p className="paratex">React, HTML, & CSS.</p>
+                  <a
+                    className="iconic"
+                    href="https://github.com/RaymondNwambuonwo/React-Money-Converter"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FontAwesomeIcon icon={["fab", "github"]} />
+                  </a>
+                </div>
+              </Modal>
+            </Card.Text>
+          </Card.Body>
+        </Card>
+
+        <Card className="text-center cards p-3 trip" border="light">
+          <Card.Img className="carder" variant="top" src={TypingGame} />
+          <Card.Body>
+            <Button
+              variant="link"
+              href="https://github.com/RaymondNwambuonwo/Typing-Game"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Card.Title className="modtex">TypingGame</Card.Title>
+            </Button>
+            <Card.Text>
+              <Button
+                className="primary modtex"
+                variant="light"
+                onClick={() => this.setModal12Visible(true)}
+              >
+                More Info
+              </Button>
+              <Modal
+                title="TypingGame"
+                centered
+                visible={this.state.modal12Visible}
+                onOk={() => this.setModal12Visible(false)}
+                onCancel={() => this.setModal12Visible(false)}
+              >
+                <div className="text-center modtex">
+                  <h3>Description</h3>
+                  <p className="paratex">
+                    A vanilla Javascript typing application where you can assess
+                    how fast you can type random statements that appear along
+                    with a timer to track how long it takes you to type the
+                    statement. When you type the statement incorrectly, the
+                    characters are highlighted red. When you type characters
+                    correctly, the characters are highlighted green. Once
+                    statement is typed correctly, another statment will generate
+                    for you to type. I wanted to develop a simple application
+                    that resembled older typing games and utilized an API to
+                    generate random statements, varying in length, that a person
+                    can type. This application covers using a thrid party API
+                    and async.
+                  </p>
+                  <h3>Future Development</h3>
+                  <p className="paratex">
+                    In the future I am looking to make this a full stack
+                    application by creating a back-end.
+                  </p>
+                  <h4>Technologies</h4>
+                  <p className="paratex">HTML, CSS, & JavaScript.</p>
+                  <a
+                    className="iconic"
+                    href="https://github.com/RaymondNwambuonwo/Typing-Game"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
